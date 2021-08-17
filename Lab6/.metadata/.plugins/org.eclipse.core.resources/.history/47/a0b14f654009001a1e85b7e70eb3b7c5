@@ -1,0 +1,24 @@
+void GPIO_init();
+void Delay1sWith4MHz();
+void SystemClock_Config(){
+	RCC->CR |= RCC_CR_HSION;// turn on HSI16 oscillator
+	while((RCC->CR & RCC_CR_HSIRDY) == 0);//check HSI16 ready
+		SET_REG(RCC->CFGR, RCC_CFGR_HPRE, 8<<4);//SYSCLK divide by 2. SYSCLK = 16MHz/2 = 8Mhz
+		if((RCC->CR & RCC_CR_HSIRDY) == 0)
+			return;
+// Use HSI16 as system clock
+//APB1 prescaler not divide
+//APB2 prescaler not divide
+}
+
+int main(){
+	SystemClock_Config();
+	GPIO_init();
+	while(1){
+		// make LED light
+		Delay1sWith4MHz();
+		// make LED dark
+		Delay1sWith4MHz();
+	}
+}
+

@@ -1,0 +1,1283 @@
+14:36:32 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:36:36 **** Incremental Build of configuration Debug for project Lab6-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:36:36 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:36:37 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:36:37 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/assembly.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/assembly.o" "../src/assembly.s"
+Finished building: ../src/assembly.s
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2576	   1088	   1088	   4752	   1290	Lab6-4.elf
+ 
+14:38:40 **** Incremental Build of configuration Debug for project Lab6-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:38:41 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:38:41 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:38:42 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+14:38:43 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:14:41 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:92:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:101:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:92:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:115:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+15:15:15 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:92:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:101:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:92:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:115:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+15:15:42 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:92:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:101:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:92:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:115:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+15:24:33 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:92:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:101:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:92:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:115:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1832	   1088	   1088	   4008	    fa8	Lab6-2.elf
+ 
+15:24:51 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:25:17 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:92:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:101:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:92:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:115:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+15:25:35 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:26:13 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:28:54 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:30:23 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+15:37:28 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:24:28 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2968	   1088	   1088	   5144	   1418	Lab6-3.elf
+ 
+16:24:36 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:24:50 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:27:27 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3008	   1088	   1088	   5184	   1440	Lab6-3.elf
+ 
+16:28:33 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3008	   1088	   1088	   5184	   1440	Lab6-3.elf
+ 
+16:29:11 **** Incremental Build of configuration Debug for project Lab6-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+16:30:13 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:90:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:95:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:90:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:109:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+16:30:20 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3008	   1088	   1088	   5184	   1440	Lab6-4.elf
+ 
+17:04:35 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2648	   1088	   1088	   4824	   12d8	Lab6-4.elf
+ 
+17:18:59 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2584	   1088	   1088	   4760	   1298	Lab6-4.elf
+ 
+17:59:11 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2600	   1088	   1088	   4776	   12a8	Lab6-4.elf
+ 
+17:59:14 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:18:57 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2600	   1088	   1088	   4776	   12a8	Lab6-4.elf
+ 
+18:27:50 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2600	   1088	   1088	   4776	   12a8	Lab6-4.elf
+ 
+18:29:25 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2600	   1088	   1088	   4776	   12a8	Lab6-4.elf
+ 
+18:32:32 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:33:39 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:129:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2616	   1088	   1088	   4792	   12b8	Lab6-4.elf
+ 
+18:34:57 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:35:51 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3024	   1088	   1088	   5200	   1450	Lab6-3.elf
+ 
+18:57:58 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3048	   1088	   1088	   5224	   1468	Lab6-3.elf
+ 
+19:09:09 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:09:21 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:09:28 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:09:36 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:09:43 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:09:54 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:10:56 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:11:54 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:31:23 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3072	   1088	   1088	   5248	   1480	Lab6-3.elf
+ 
+19:31:37 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:39:04 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:41:22 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:42:34 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:220:24: error: 'value_last' undeclared (first use in this function); did you mean 'value'?
+     if(pressed == 0 && value_last != value){
+                        ^~~~~~~~~~
+                        value
+../src/main.c:220:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+src/subdir.mk:30: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+19:42:50 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3056	   1088	   1088	   5232	   1470	Lab6-3.elf
+ 
+19:45:25 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3072	   1088	   1088	   5248	   1480	Lab6-3.elf
+ 
+19:46:11 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:46:40 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:126:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3008	   1088	   1088	   5184	   1440	Lab6-3.elf
+ 
+19:47:20 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3048	   1088	   1088	   5224	   1468	Lab6-3.elf
+ 
+19:48:43 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3048	   1088	   1088	   5224	   1468	Lab6-3.elf
+ 
+20:14:34 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3048	   1088	   1088	   5224	   1468	Lab6-3.elf
+ 
+21:06:51 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:130:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3056	   1088	   1088	   5232	   1470	Lab6-3.elf
+ 
+21:17:01 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:128:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2608	   1088	   1088	   4784	   12b0	Lab6-4.elf
+ 
+19:18:00 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-4\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-4/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:128:6: warning: unused variable 'playing_flag' [-Wunused-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-4.elf" @"objects.list"   -lm
+Finished building target: Lab6-4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-4.elf" "Lab6-4.bin"
+arm-none-eabi-size "Lab6-4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2608	   1088	   1088	   4784	   12b0	Lab6-4.elf
+ 
+19:18:08 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:18:19 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:18:59 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:90:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:95:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:90:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:109:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+19:19:27 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:90:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:95:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:90:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:109:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+19:21:20 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:129:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3056	   1088	   1088	   5232	   1470	Lab6-3.elf
+ 
+19:27:40 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:36:43 **** Incremental Build of configuration Debug for project Lab6-4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+19:37:25 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:129:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3216	   1088	   1088	   5392	   1510	Lab6-3.elf
+ 
+19:43:01 **** Incremental Build of configuration Debug for project Lab6-3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'display':
+../src/main.c:36:4: warning: implicit declaration of function 'max7219_send'; did you mean 'max7219_init'? [-Wimplicit-function-declaration]
+    max7219_send(digit, number);
+    ^~~~~~~~~~~~
+    max7219_init
+../src/main.c: In function 'main':
+../src/main.c:129:6: warning: variable 'playing_flag' set but not used [-Wunused-but-set-variable]
+  int playing_flag = 0;
+      ^~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-3.elf" @"objects.list"   -lm
+Finished building target: Lab6-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-3.elf" "Lab6-3.bin"
+arm-none-eabi-size "Lab6-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3224	   1088	   1088	   5400	   1518	Lab6-3.elf
+ 

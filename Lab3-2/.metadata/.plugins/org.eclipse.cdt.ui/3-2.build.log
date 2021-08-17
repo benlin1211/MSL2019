@@ -1,0 +1,23 @@
+15:23:17 **** Incremental Build of configuration Debug for project 3-2 ****
+make -j8 all 
+Building file: ../src/.main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab3-2\3-2\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/.main.o" "../src/.main.s"
+Finished building: ../src/.main.s
+ 
+Building target: 3-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab3-2/3-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "3-2.elf" @"objects.list"   -lm
+Finished building target: 3-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "3-2.elf" "3-2.bin"
+arm-none-eabi-size "3-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1200	   1096	   1088	   3384	    d38	3-2.elf
+ 
+
+15:23:19 Build Finished (took 1s.691ms)
+

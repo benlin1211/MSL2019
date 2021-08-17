@@ -1,0 +1,1515 @@
+09:22:11 **** Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../startup/startup_stm32.s
+Finished building: ../src/main.s
+ 
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1184	   1104	   1088	   3376	    d30	lab4-3.elf
+ 
+09:22:22 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:22:47 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:32:32 **** Build of configuration Debug for project Lab4 ****
+make -j8 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+Building file: ../src/main.s
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../startup/startup_stm32.s
+ 
+Finished building: ../src/main.s
+ 
+Finished building: ../startup/sysmem.c
+ 
+Building target: Lab4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/Lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.elf" @"objects.list"   -lm
+Finished building target: Lab4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.elf" "Lab4.bin"
+arm-none-eabi-size "Lab4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1184	   1104	   1088	   3376	    d30	Lab4.elf
+ 
+09:32:42 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:34:53 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:35:00 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:41:50 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1312	   1104	   1088	   3504	    db0	lab4-3.elf
+ 
+13:43:02 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+13:43:55 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1312	   1104	   1088	   3504	    db0	lab4-3.elf
+ 
+13:44:23 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1312	   1104	   1088	   3504	    db0	lab4-3.elf
+ 
+13:45:42 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1312	   1104	   1088	   3504	    db0	lab4-3.elf
+ 
+13:46:28 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1312	   1104	   1088	   3504	    db0	lab4-3.elf
+ 
+23:04:52 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:68: Error: garbage following instruction -- `udiv r0,r0,#10'
+../src/main.s:181: Error: junk at end of line, first unrecognized character is ``'
+../src/main.s:114: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:05:10 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:68: Error: ARM register expected -- `udiv r0,#10'
+../src/main.s:181: Error: junk at end of line, first unrecognized character is ``'
+../src/main.s:114: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:05:33 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:68: Error: garbage following instruction -- `udiv r0,r0,#10'
+../src/main.s:181: Error: junk at end of line, first unrecognized character is ``'
+../src/main.s:114: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:06:31 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:183: Error: junk at end of line, first unrecognized character is ``'
+../src/main.s:116: Error: invalid constant (f4240) after fixup
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:07:50 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:185: Error: junk at end of line, first unrecognized character is ``'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:07:59 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1320	   1104	   1088	   3512	    db8	lab4-3.elf
+ 
+23:18:24 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1328	   1104	   1088	   3520	    dc0	lab4-3.elf
+ 
+23:24:35 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:188: Error: bad expression -- `mov r2,=#0xF2FFFFFF'
+make: *** [src/main.o] Error 1
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+23:27:16 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1328	   1104	   1088	   3520	    dc0	lab4-3.elf
+ 
+23:27:26 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:29:47 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+23:29:54 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:30:02 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:39:34 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:88: Error: symbol `Carry' is already defined
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+23:40:40 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+23:40:43 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:41:11 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:42:40 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:43:50 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:45:44 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:46:50 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+23:49:42 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+23:53:41 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+23:53:45 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:56:04 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:03:10 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:03:20 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:09:46 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+00:10:47 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+00:12:59 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:13:43 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+00:14:37 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:15:13 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:15:50 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:16:31 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:18:59 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:19:40 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1336	   1104	   1088	   3528	    dc8	lab4-3.elf
+ 
+00:19:42 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:31:29 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1360	   1104	   1088	   3552	    de0	lab4-3.elf
+ 
+00:38:35 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1344	   1104	   1088	   3536	    dd0	lab4-3.elf
+ 
+00:38:38 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:40:36 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1352	   1104	   1088	   3544	    dd8	lab4-3.elf
+ 
+00:43:56 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1368	   1104	   1088	   3560	    de8	lab4-3.elf
+ 
+00:44:17 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:44:38 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:45:38 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:48:03 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1376	   1104	   1088	   3568	    df0	lab4-3.elf
+ 
+00:48:17 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:49:56 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1376	   1104	   1088	   3568	    df0	lab4-3.elf
+ 
+00:53:08 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1376	   1104	   1088	   3568	    df0	lab4-3.elf
+ 
+00:54:12 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:56:14 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1376	   1104	   1088	   3568	    df0	lab4-3.elf
+ 
+01:03:06 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1376	   1104	   1088	   3568	    df0	lab4-3.elf
+ 
+01:03:26 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1376	   1104	   1088	   3568	    df0	lab4-3.elf
+ 
+01:03:28 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:03:36 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:13:22 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:139: Error: symbol `L' is already defined
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+01:13:59 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1448	   1104	   1088	   3640	    e38	lab4-3.elf
+ 
+01:14:22 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:15:03 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1448	   1104	   1088	   3640	    e38	lab4-3.elf
+ 
+01:27:39 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1456	   1104	   1088	   3648	    e40	lab4-3.elf
+ 
+01:27:46 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:28:46 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1456	   1104	   1088	   3648	    e40	lab4-3.elf
+ 
+01:28:48 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:32:20 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1456	   1104	   1088	   3648	    e40	lab4-3.elf
+ 
+01:32:29 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:32:35 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:33:25 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1456	   1104	   1088	   3648	    e40	lab4-3.elf
+ 
+01:33:48 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1456	   1104	   1088	   3648	    e40	lab4-3.elf
+ 
+01:34:25 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:34:33 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:35:10 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:35:33 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:35:52 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:36:10 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:36:36 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:36:41 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:36:52 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:36:57 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:37:07 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:37:19 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:39:25 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1448	   1104	   1088	   3640	    e38	lab4-3.elf
+ 
+01:39:36 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:40:01 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:40:24 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:40:47 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:41:01 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:41:21 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:41:46 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:42:24 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:42:37 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:44:07 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1464	   1104	   1088	   3656	    e48	lab4-3.elf
+ 
+01:44:09 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+01:50:57 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1464	   1104	   1088	   3656	    e48	lab4-3.elf
+ 
+09:46:55 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1472	   1104	   1088	   3664	    e50	lab4-3.elf
+ 
+09:47:04 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:50:54 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1480	   1104	   1088	   3672	    e58	lab4-3.elf
+ 
+09:58:14 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1488	   1104	   1088	   3680	    e60	lab4-3.elf
+ 
+09:58:17 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:58:24 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+09:59:39 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1488	   1104	   1088	   3680	    e60	lab4-3.elf
+ 
+10:01:20 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+../src/main.s: Assembler messages:
+../src/main.s:157: Error: incorrect condition in IT block -- `bl do_pushed'
+src/subdir.mk:15: recipe for target 'src/main.o' failed
+make: *** [src/main.o] Error 1
+10:01:26 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1496	   1104	   1088	   3688	    e68	lab4-3.elf
+ 
+10:01:34 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+10:02:13 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1480	   1104	   1088	   3672	    e58	lab4-3.elf
+ 
+12:22:46 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:23:49 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:25:16 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1480	   1104	   1088	   3672	    e58	lab4-3.elf
+ 
+12:26:04 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:26:48 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1480	   1104	   1088	   3672	    e58	lab4-3.elf
+ 
+12:28:32 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1472	   1104	   1088	   3664	    e50	lab4-3.elf
+ 
+12:48:17 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1496	   1104	   1088	   3688	    e68	lab4-3.elf
+ 
+12:48:47 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:48:50 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:49:31 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:51:51 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1496	   1104	   1088	   3688	    e68	lab4-3.elf
+ 
+12:52:50 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+12:55:49 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1528	   1104	   1088	   3720	    e88	lab4-3.elf
+ 
+12:56:29 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1528	   1104	   1088	   3720	    e88	lab4-3.elf
+ 
+12:57:27 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1528	   1104	   1088	   3720	    e88	lab4-3.elf
+ 
+13:00:51 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\lab4-3\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: lab4-3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/lab4-3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab4-3.elf" @"objects.list"   -lm
+Finished building target: lab4-3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab4-3.elf" "lab4-3.bin"
+arm-none-eabi-size "lab4-3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1528	   1104	   1088	   3720	    e88	lab4-3.elf
+ 
+18:39:13 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:39:18 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:40:21 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:40:38 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:40:45 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:52:58 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/Lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.elf" @"objects.list"   -lm
+Finished building target: Lab4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.elf" "Lab4.bin"
+arm-none-eabi-size "Lab4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1216	   1104	   1088	   3408	    d50	Lab4.elf
+ 
+18:53:40 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/Lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.elf" @"objects.list"   -lm
+Finished building target: Lab4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.elf" "Lab4.bin"
+arm-none-eabi-size "Lab4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1216	   1104	   1088	   3408	    d50	Lab4.elf
+ 
+18:54:13 **** Incremental Build of configuration Debug for project lab4-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+18:58:12 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/Lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.elf" @"objects.list"   -lm
+Finished building target: Lab4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.elf" "Lab4.bin"
+arm-none-eabi-size "Lab4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1192	   1104	   1088	   3384	    d38	Lab4.elf
+ 
+18:59:00 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+Building file: ../src/main.s
+Invoking: MCU GCC Assembler
+D:\微處理機系統實驗\Lab4-2\Lab4\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "src/main.o" "../src/main.s"
+Finished building: ../src/main.s
+ 
+Building target: Lab4.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab4-2/Lab4/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab4.elf" @"objects.list"   -lm
+Finished building target: Lab4.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab4.elf" "Lab4.bin"
+arm-none-eabi-size "Lab4.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1216	   1104	   1088	   3408	    d50	Lab4.elf
+ 
+23:50:19 **** Incremental Build of configuration Debug for project Lab4 ****
+make -j8 all 
+make: Nothing to be done for 'all'.

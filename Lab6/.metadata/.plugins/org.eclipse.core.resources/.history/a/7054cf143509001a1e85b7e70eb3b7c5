@@ -1,0 +1,15 @@
+void GPIO_init();
+void Delay1sWith4MHz();
+void SystemClock_Config(){
+//TODO: Change the SYSCLK source and set the corresponding Prescaler value.
+}
+int main(){
+	SystemClock_Config();
+	GPIO_init();
+	while(1){
+		// make LED light
+		Delay1sWith4MHz();
+		// make LED dark
+		Delay1sWith4MHz();
+	}
+}

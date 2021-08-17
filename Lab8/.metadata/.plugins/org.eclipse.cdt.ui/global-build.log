@@ -1,0 +1,61 @@
+23:18:16 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:18:23 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:19:42 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:25:20 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:25:58 **** Incremental Build of configuration Debug for project Lab8-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:26:54 **** Incremental Build of configuration Debug for project Lab8-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+23:27:08 **** Incremental Build of configuration Debug for project Lab8-3 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:17:01 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab8\Lab8-1\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab8/Lab8-1/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'EXTI15_10_IRQHandler':
+../src/main.c:101:3: warning: implicit declaration of function 'UART_Transmit' [-Wimplicit-function-declaration]
+   UART_Transmit(s, strlen(s));
+   ^~~~~~~~~~~~~
+../src/main.c: In function 'UART_Transmit':
+../src/main.c:112:6: warning: unused variable 'a' [-Wunused-variable]
+  int a;
+      ^
+Finished building: ../src/main.c
+ 
+Building target: Lab8-1.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab8/Lab8-1/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab8-1.elf" @"objects.list"   -lm
+Finished building target: Lab8-1.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab8-1.elf" "Lab8-1.bin"
+arm-none-eabi-size "Lab8-1.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2048	   1088	   1088	   4224	   1080	Lab8-1.elf
+ 
+00:35:09 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:35:50 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:39:07 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.
+00:54:41 **** Incremental Build of configuration Debug for project Lab8-1 ****
+make -j8 all 
+make: Nothing to be done for 'all'.

@@ -1,0 +1,51 @@
+19:19:27 **** Incremental Build of configuration Debug for project Lab6-2 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab6\Lab6-2\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab6/Lab6-2/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'Timer_start':
+../src/main.c:54:2: warning: implicit declaration of function 'display_init'; did you mean 'Timer_init'? [-Wimplicit-function-declaration]
+  display_init();
+  ^~~~~~~~~~~~
+  Timer_init
+../src/main.c: At top level:
+../src/main.c:57:6: warning: conflicting types for 'display_init'
+ void display_init(){
+      ^~~~~~~~~~~~
+../src/main.c:54:2: note: previous implicit declaration of 'display_init' was here
+  display_init();
+  ^~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:90:9: warning: implicit declaration of function 'display'; did you mean 'display_init'? [-Wimplicit-function-declaration]
+    else display(t);
+         ^~~~~~~
+         display_init
+../src/main.c: At top level:
+../src/main.c:95:6: warning: conflicting types for 'display'
+ void display(int data)
+      ^~~~~~~
+../src/main.c:90:9: note: previous implicit declaration of 'display' was here
+    else display(t);
+         ^~~~~~~
+../src/main.c: In function 'display':
+../src/main.c:109:13: warning: implicit declaration of function 'decode' [-Wimplicit-function-declaration]
+    number = decode(number);
+             ^~~~~~
+Finished building: ../src/main.c
+ 
+Building target: Lab6-2.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab6/Lab6-2/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Lab6-2.elf" @"objects.list"   -lm
+Finished building target: Lab6-2.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Lab6-2.elf" "Lab6-2.bin"
+arm-none-eabi-size "Lab6-2.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1840	   1088	   1088	   4016	    fb0	Lab6-2.elf
+ 
+
+19:19:29 Build Finished (took 1s.979ms)
+

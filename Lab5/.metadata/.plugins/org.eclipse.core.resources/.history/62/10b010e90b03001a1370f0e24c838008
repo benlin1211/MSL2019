@@ -1,0 +1,56 @@
+    .syntax unified
+    .cpu cortex-m4
+    .thumb
+	.text
+		.global main
+    	//----------
+    	.equ GPIOA_BASE, 0x48000000
+    	.equ DATA, 0x20 //send to PA5  000000(0010 0000)
+		.equ LOAD, 0x40 //send to PA6  000000(0100 0000)
+		.equ CLOCK, 0x80 //send to PA7 000000(1000 0000)
+		//Data above are control by BSRR instead of ODR
+    	.equ GPIO_BSRR_OFFSET, 0x18 //	修改ODR會一次改到整個GPIO port的值，若只需改動到某一個pin腳時可利用BSRR register存取
+		.equ GPIO_BRR_OFFSET, 0x28
+    	//----------
+
+
+	main:
+		BL GPIO_init
+		BL max7219_init
+	loop:
+		BL Display0toF
+		B loop
+
+	MAX7219Send:
+		//The function of max7219_init
+		//input parameter: r0 is ADDRESS , r1 is DATA
+		//TODO: Use this function to send a message to max7219
+		lsl r0, r0, #8 //addr is D11~D8, shift it!
+		add r0, r0, r1
+		ldr r1, =GPIOA_BASE
+		ldr r2, =LOAD //latch
+		ldr r3, =DATA
+		ldr r4, =CLOCK
+		ldr r5, =GPIO_BSRR_OFFSET
+		ldr r6, =GPIO_BRR_OFFSET
+		mov r7, #16 //r7 = i
+		max7219send_loop: //while r7>0
+		mov r8, #1
+		sub r9, r7, #1
+		lsl r8, r8, r9 // r8 = mask
+		str r4, [r1,r6]//HAL_GPIO_WritePin(GPIOA, CLOCK, 0); ///
+		tst r0, r8
+		beq bit_not_set//bit not set
+		str r3, [r1,r5]
+		b if_done
+		bit_not_set:
+		str r3, [r1,r6]
+		if_done:
+		str r4, [r1,r5]
+		subs r7, r7, #1
+		bgt max7219send_loop
+		str r2, [r1,r6] //latched
+		str r2, [r1,r5]
+
+		BX LR
+

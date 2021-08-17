@@ -1,0 +1,44 @@
+#include "stm32l476xx.h"
+#define RCC_CR_HSION 1
+#define RCC_CR_HSIRDY 1
+
+#define RCC_CFGR_HPRE 8 //n=0~7:origin, n=8~15:divide by 2^(n-7)
+
+
+#define SET_REG(REG,SELECT,VAL) {((REG)=((REG)&(~(SELECT)))|(VAL));};
+//REG: register address
+//SELECT:selected region sets to 1
+
+void GPIO_init();
+void Delay1sWith4MHz();
+void SystemClock_Config();
+
+int main(){
+	SystemClock_Config();
+	GPIO_init();
+	while(1){
+		// make LED light
+		Delay1sWith4MHz();
+		// make LED dark
+		Delay1sWith4MHz();
+	}
+}
+
+void SystemClock_Config(){
+
+	// Use HSI16 as system (main) clock
+    int CFGR = 0x08;
+	RCC->CR |= RCC_CR_HSION;// turn on HSI16 oscillator
+	while( (RCC->CR & RCC_CR_HSIRDY) == 0);//check HSI16 ready
+	SET_REG(RCC->CFGR, RCC_CFGR_HPRE, 8<<4);//SYSCLK divide by 2. SYSCLK = 16MHz/2 = 8Mhz
+	if((RCC->CR & RCC_CR_HSIRDY) == 0) //keep ensuring HSI16 ready
+		return;
+
+//APB1 prescaler not divide
+//APB2 prescaler not divide
+
+}
+
+void Delay1sWith4MHz(){
+
+}

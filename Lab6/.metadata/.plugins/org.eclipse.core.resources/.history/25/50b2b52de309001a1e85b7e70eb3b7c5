@@ -1,0 +1,74 @@
+#include "stm32l476xx.h"
+#include "cmsis_gcc.h"
+#include "core_cm4.h"
+#include "core_cmFunc.h"
+#include "core_cmInstr.h"
+#include "core_cmSimd.h"
+#include "system_stm32l4xx.h"
+
+#define SET_REG(REG,SELECT,VAL) {((REG)=((REG)&(~(SELECT)))|(VAL));};
+// You can use your way to store TIME_SEC. Maybe it is `int` or `float` or any you want
+#define TIME_SEC 12.70
+
+extern void GPIO_init();
+extern void max7219_init();
+extern void Display();
+void Timer_init( TIM_TypeDef *timer)
+{
+	RCC->APB1ENR1 |= RCC_APB1ENR1_TIM5EN;//timer5 clock enable
+	timer->PSC = (uint32_t)999;//Prescalser
+	timer->ARR = (uint32_t)3999;//Reload value
+	timer->EGR = TIM_EGR_UG;//Reinitialize the counter.
+}
+void Timer_start( TIM_TypeDef *timer){
+//TODO: start timer and show the time on the 7-SEG LED.
+	//start timer
+	timer->CR1 |= TIM_CR1_CEN;
+	int i;
+	for(i=1;i<=8;i++){
+		max7219_send(i,15); //ADDRESS , DATA
+	}
+}
+int main(){
+	GPIO_init();
+	max7219_init();
+	Timer_init(TIM5);
+	Timer_start(TIM5);
+	int timerValue;
+	while(1)
+	{
+		//TODO: Polling the timer count and do lab requirements
+		timerValue = TIM5->CNT;
+		if (timerValue < 2000)
+			GPIOA->BRR = 0b100001;//on
+		if (timerValue >= 2000)
+			GPIOA->BSRR = 0b100001;//off
+	}
+}
+
+/*
+
+
+void GPIO_init();
+
+
+int main(){
+
+	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;//enable GPIOA clock
+	GPIO_init();//init PA5 as output
+	RCC->APB1ENR1 |= RCC_APB1ENR1_TIM5EN ;//timer5 clock enable
+	//timer5 settings
+	TIM5->PSC = (uint32_t)999;//Prescalser
+	TIM5->ARR = (uint32_t)3999;//Reload value
+	TIM5->EGR = TIM_EGR_UG;//Reinitialize the counter. CNT takes the auto-reload value.
+
+	TIM5->CR1 |= TIM_CR1_CEN;
+	int timerValue;
+	while(1){
+		timerValue = TIM5->CNT;
+		if (timerValue < 2000)
+			GPIOA->BRR = 0b100001;//on
+		if (timerValue >= 2000)
+			GPIOA->BSRR = 0b100001;//off
+	}
+}*/

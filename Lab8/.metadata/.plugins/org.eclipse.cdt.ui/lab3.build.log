@@ -1,0 +1,135 @@
+18:38:23 **** Incremental Build of configuration Debug for project lab3 ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+D:\微處理機系統實驗\Lab8\lab3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32L4 -DSTM32L476RGTx -DNUCLEO_L476RG -DDEBUG -I"D:/微處理機系統實驗/Lab8/lab3/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'EXTI15_10_IRQHandler':
+../src/main.c:150:22: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+   unsigned char *s = "Hello Charlie. ";
+                      ^~~~~~~~~~~~~~~~~
+../src/main.c:152:27: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   UART_Transmit(s, strlen(s));
+                           ^
+In file included from ../src/main.c:9:0:
+d:\sw4stm32\plugins\fr.ac6.mcu.externaltools.arm-none.win32_1.17.0.201812190825\tools\compiler\arm-none-eabi\include\string.h:41:9: note: expected 'const char *' but argument is of type 'unsigned char *'
+ size_t  strlen (const char *);
+         ^~~~~~
+../src/main.c: In function 'USART1_IRQHandler':
+../src/main.c:175:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit("\r\n", 4);
+                  ^~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:180:22: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  else if( ~TIM5->CR1 & TIM_CR1_CEN == TIM_CR1_CEN ){// not in light mode
+                      ^
+../src/main.c:182:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit("\r\n", 4);
+                  ^~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:234:17: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+   UART_Transmit("\r\n", 4);
+                 ^~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:235:17: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+   UART_Transmit(">", 1);
+                 ^~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:240:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit(id, strlen(id));
+                  ^~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:241:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit("\r\n", 4);
+                  ^~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:257:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit("Unknown Command", 15);
+                  ^~~~~~~~~~~~~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:258:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit("\r\n", 4);
+                  ^~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:261:22: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+    if( (~GPIOA->ODR) & (1 << 5) == 0 ) UART_Transmit("off", 3);
+                      ^
+../src/main.c:261:54: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    if( (~GPIOA->ODR) & (1 << 5) == 0 ) UART_Transmit("off", 3);
+                                                      ^~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:262:23: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    else UART_Transmit("on", 2);
+                       ^~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:263:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit("\r\n", 4);
+                  ^~~~~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:267:18: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit(">", 1);
+                  ^~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:387:16: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+  UART_Transmit(">", 1);
+                ^~~
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:393:38: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+   if (timerValue == 9  && (TIM5->CR1 & TIM_CR1_CEN == 1) ){//0~9
+                                      ^
+../src/main.c:402:19: warning: pointer targets in passing argument 1 of 'UART_Transmit' differ in signedness [-Wpointer-sign]
+    UART_Transmit( s, d );
+                   ^
+../src/main.c:129:5: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ int UART_Transmit(uint8_t *arr, uint32_t size) {
+     ^~~~~~~~~~~~~
+../src/main.c:381:6: warning: variable 'calibration_value' set but not used [-Wunused-but-set-variable]
+  int calibration_value;
+      ^~~~~~~~~~~~~~~~~
+../src/main.c:378:6: warning: unused variable 't' [-Wunused-variable]
+  int t = 0;
+      ^
+Finished building: ../src/main.c
+ 
+Building target: lab3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"D:/微處理機系統實驗/Lab8/lab3/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "lab3.elf" @"objects.list"   -lm
+Finished building target: lab3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "lab3.elf" "lab3.bin"
+arm-none-eabi-size "lab3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4672	   1096	   1216	   6984	   1b48	lab3.elf
+ 
+
+18:38:25 Build Finished (took 2s.39ms)
+

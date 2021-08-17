@@ -1,0 +1,48 @@
+#include "stm32l476xx.h"
+#include "cmsis_gcc.h"
+#include "core_cm4.h"
+#include "core_cmFunc.h"
+#include "core_cmInstr.h"
+#include "core_cmSimd.h"
+#include "system_stm32l4xx.h"
+
+#define SET_REG(REG,SELECT,VAL) {((REG)=((REG)&(~(SELECT)))|(VAL));};
+
+
+int Init(){
+	int calibration_value;
+		//ADC1 or ADC?
+	RCC->CFGR2 |= RCC_CFGR2_ADCPRE12_DIV2;
+	RCC->AHBENR |= RCC_AHBENR_ADC12EN;
+		//for pc1 in analog mode
+	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOCEN;
+	GPIOC->MODER |= 0b11<<2; //ADC channel7
+	ADC1->CR |= ADC_CR_ADVREGEN; //ADC voltage regulator enabled
+	delay(10);//10us
+	ADC1->CR &= ~ADC_CR_ADCALDIF; //single-ended inputs mode
+	ADC1->CR |= ADC_CR_ADCAL; //start ADC calibration
+		//read in 1 means that a calibration in progress
+	while(ADC1->CR & ADC_CR_ADCAL);//wait until calibration done
+	calibration_value = ADC1->CALFACT;
+		//ADC1 configuration
+	ADC1->CFGR |= ADC_CFGR_CONT; //continuous mode
+	ADC1->CFGR &= ~ADC_CFGR_RES; //00:12-bit data resolution
+	ADC1->CFGR &= ~ADC_CFGR_ALIGN; //Right alignment
+		//ADC"1" regular channel"7" configuration
+	ADC1->SQR1 |= (ADC_SQR1_SQ1_2|ADC_SQR1_SQ1_1|ADC_SQR1_SQ1_0);//0111
+	ADC1->SQR1 &= ~ADC_SQR1_L; // Regular channel sequence length
+	ADC1->SMPR1 != (ADC_SMPR1_SMP7_1 |ADC_SMPR1_SMP7_0); //0x03:sampling time 7.5 clock cycle
+	ADC1->CR |= ADC_CR_ADEN;
+	while(!ADC1->ISR & ADC_ISR_ADRDY );
+	ADC1->CR |= ADC_CR_ADSTART;
+
+	return calibration_value;
+}
+
+int main(void){
+	int calibration_value;
+	calibration_value = Init();
+
+}
+
+

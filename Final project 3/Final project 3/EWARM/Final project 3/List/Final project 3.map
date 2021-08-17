@@ -1,0 +1,749 @@
+###############################################################################
+#
+# IAR ELF Linker V8.32.1.169/W32 for ARM                  14/Jan/2020  20:53:05
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Exe\Final project 3.out
+#    Map file     =  
+#        D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\List\Final project 3.map
+#    Command line =  
+#        -f C:\Users\Man\AppData\Local\Temp\EW4660.tmp
+#        ("D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\app_x-cube-ai.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\hand_recog.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\hand_recog_data.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\main.o" "D:\微處理機系統實驗\Final
+#        project 3\Final project
+#        3\Middlewares\ST\AI\Lib\NetworkRuntime500_CM4_IAR.a"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\startup_stm32l476xx.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_cortex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_crc.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_crc_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_dma.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_dma_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_exti.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_flash.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_flash_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_flash_ramfunc.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_gpio.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_i2c.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_i2c_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_msp.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_pwr.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_pwr_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_rcc.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_rcc_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_tim.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_tim_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_uart.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_hal_uart_ex.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\stm32l4xx_it.o"
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Obj\system_stm32l4xx.o" --redirect
+#        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --no_out_extension -o
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\Exe\Final project 3.out" --map
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM\Final project 3\List\Final project 3.map" --config
+#        "D:\微處理機系統實驗\Final project 3\Final project
+#        3\EWARM/stm32l476xx_flash.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x80f'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 16K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2001'7fff] {
+          rw, block CSTACK, block HEAP };
+"P3":  place in [from 0x2000'0000 to 0x2001'7fff] { };
+initialize by copy { rw };
+
+  Section            Kind         Address     Size  Object
+  -------            ----         -------     ----  ------
+"A0":                                        0x188
+  .intvec            ro code   0x800'0000    0x188  startup_stm32l476xx.o [1]
+                             - 0x800'0188    0x188
+
+"P1":                                      0xacab6
+  .rodata            const     0x800'0188  0xa8268  hand_recog_data.o [1]
+  .text              ro code   0x80a'83f0   0x10ac  layers_conv2d_generic_float.o [2]
+  .text              ro code   0x80a'949c    0x13a  ai_datatypes_format.o [2]
+  .text              ro code   0x80a'95d6     0x7a  lz77_init_single.o [5]
+  .text              ro code   0x80a'9650    0x6f4  stm32l4xx_hal_rcc.o [1]
+  .text              ro code   0x80a'9d44     0x44  stm32l4xx_hal.o [1]
+  .text              ro code   0x80a'9d88      0xc  stm32l4xx_hal.o [1]
+  .text              ro code   0x80a'9d94     0x88  stm32l4xx_hal_pwr_ex.o [1]
+  .text              ro code   0x80a'9e1c     0xac  stm32l4xx_hal_cortex.o [1]
+  .text              ro code   0x80a'9ec8    0x5ec  ai_platform_interface.o [2]
+  .text              ro code   0x80a'a4b4     0x24  core_common.o [2]
+  .text              ro code   0x80a'a4d8     0x54  layers.o [2]
+  .text              ro code   0x80a'a52c     0xa6  ABImemcpy.o [5]
+  .text              ro code   0x80a'a5d2     0x3a  zero_init3.o [5]
+  .text              ro code   0x80a'a60c     0x68  memcmp.o [5]
+  .text              ro code   0x80a'a674    0x538  stm32l4xx_hal_rcc_ex.o [1]
+  .text              ro code   0x80a'abac    0x4ba  stm32l4xx_hal_uart.o [1]
+  .text              ro code   0x80a'b068    0x138  stm32l4xx_hal_msp.o [1]
+  .text              ro code   0x80a'b1a0    0x106  I64DivMod_small.o [5]
+  .text              ro code   0x80a'b2a8      0x6  ABImemclr4.o [5]
+  .text              ro code   0x80a'b2b0    0x1fc  stm32l4xx_hal_gpio.o [1]
+  .text              ro code   0x80a'b4ac      0x2  I64DivZer.o [5]
+  .text              ro code   0x80a'b4b0     0x32  ABImemset48.o [5]
+  .text              ro code   0x80a'b4e4    0x4a8  main.o [1]
+  .text              ro code   0x80a'b98c     0x12  strcmp.o [5]
+  .text              ro code   0x80a'b9a0     0xa4  app_x-cube-ai.o [1]
+  .text              ro code   0x80a'ba44     0x1e  stm32l4xx_hal.o [1]
+  .text              ro code   0x80a'ba64     0x7c  stm32l4xx_hal_crc.o [1]
+  .text              ro code   0x80a'bae0      0x8  hand_recog_data.o [1]
+  .text              ro code   0x80a'bae8    0x11c  hand_recog.o [1]
+  .text              ro code   0x80a'bc04     0x4c  stm32l4xx_hal_crc_ex.o [1]
+  .text              ro code   0x80a'bc50    0x404  layers_nl_generic_float.o [2]
+  .text              ro code   0x80a'c054     0x5a  expf.o [4]
+  .text              ro code   0x80a'c0b0     0xde  xexpf.o [4]
+  .text              ro code   0x80a'c190    0x370  layers_pool_generic_float.o [2]
+  .rodata            const     0x80a'c500     0xcc  main.o [1]
+  .text              ro code   0x80a'c5cc     0x5c  system_stm32l4xx.o [1]
+  .rodata            const     0x80a'c628     0x44  xexpf.o [4]
+  .rodata            const     0x80a'c66c     0x38  hand_recog.o [1]
+  .rodata            const     0x80a'c6a4     0x30  app_x-cube-ai.o [1]
+  .rodata            const     0x80a'c6d4     0x30  system_stm32l4xx.o [1]
+  .text              ro code   0x80a'c704     0x28  data_init.o [5]
+  .text              ro code   0x80a'c72c     0x22  fpinit_M.o [4]
+  .iar.init_table    const     0x80a'c750     0x20  - Linker created -
+  .text              ro code   0x80a'c770     0x1e  cmain.o [5]
+  .text              ro code   0x80a'c78e      0x4  low_level_init.o [3]
+  .text              ro code   0x80a'c792      0x4  exit.o [3]
+  .text              ro code   0x80a'c798      0xa  cexit.o [5]
+  .text              ro code   0x80a'c7a4     0x14  exit.o [6]
+  .text              ro code   0x80a'c7b8     0x14  stm32l4xx_it.o [1]
+  .text              ro code   0x80a'c7cc     0x10  stm32l4xx_hal.o [1]
+  .text              ro code   0x80a'c7dc     0x10  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c7ec      0xc  cstartup_M.o [5]
+  .rodata            const     0x80a'c7f8      0x8  system_stm32l4xx.o [1]
+  .text              ro code   0x80a'c800      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c804      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c808      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c80c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c810      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c814      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c818      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c81c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c820      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c824      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c828      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c82c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c830      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c834      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c838      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c83c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c840      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c844      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c848      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c84c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c850      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c854      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c858      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c85c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c860      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c864      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c868      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c86c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c870      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c874      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c878      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c87c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c880      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c884      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c888      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c88c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c890      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c894      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c898      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c89c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8a0      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8a4      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8a8      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8ac      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8b0      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8b4      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8b8      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8bc      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8c0      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8c4      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8c8      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8cc      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8d0      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8d4      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8d8      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8dc      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8e0      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8e4      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8e8      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8ec      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8f0      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8f4      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8f8      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c8fc      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c900      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c904      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c908      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c90c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c910      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c914      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c918      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c91c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c920      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c924      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c928      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c92c      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c930      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c934      0x4  startup_stm32l476xx.o [1]
+  .text              ro code   0x80a'c938      0x4  startup_stm32l476xx.o [1]
+  .rodata            const     0x80a'c93c      0x0  zero_init3.o [5]
+  .rodata            const     0x80a'c93c      0x0  lz77_init_single.o [5]
+  Initializer bytes  const     0x80a'c93c    0x302  <for P2-P3-1>
+                             - 0x80a'cc3e  0xacab6
+
+"P2-P3", part 1 of 3:                        0x8c0
+  P2-P3-1                     0x2000'0000    0x8c0  <Init block>
+    .data            inited   0x2000'0000     0x34  app_x-cube-ai.o [1]
+    .data            inited   0x2000'0034     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0044     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0054     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0064     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0074     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0084     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0094     0x10  hand_recog.o [1]
+    .data            inited   0x2000'00a4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'00b4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'00c4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'00d4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'00e4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'00f4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0104     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0114     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0124     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0134     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0144     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0154     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0164     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0174     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0184     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0194     0x10  hand_recog.o [1]
+    .data            inited   0x2000'01a4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'01b4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'01c4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'01d4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'01e4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'01f4     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0204     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0214     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0224     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0234     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0244     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0254     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0264     0x10  hand_recog.o [1]
+    .data            inited   0x2000'0274      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0278      0x4  hand_recog.o [1]
+    .data            inited   0x2000'027c      0xc  hand_recog.o [1]
+    .data            inited   0x2000'0288      0x4  hand_recog.o [1]
+    .data            inited   0x2000'028c     0x30  hand_recog.o [1]
+    .data            inited   0x2000'02bc      0x4  hand_recog.o [1]
+    .data            inited   0x2000'02c0      0x4  hand_recog.o [1]
+    .data            inited   0x2000'02c4      0x8  hand_recog.o [1]
+    .data            inited   0x2000'02cc     0x30  hand_recog.o [1]
+    .data            inited   0x2000'02fc      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0300      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0304     0x30  hand_recog.o [1]
+    .data            inited   0x2000'0334      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0338      0x4  hand_recog.o [1]
+    .data            inited   0x2000'033c      0x8  hand_recog.o [1]
+    .data            inited   0x2000'0344     0x30  hand_recog.o [1]
+    .data            inited   0x2000'0374      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0378      0x4  hand_recog.o [1]
+    .data            inited   0x2000'037c     0x30  hand_recog.o [1]
+    .data            inited   0x2000'03ac      0x4  hand_recog.o [1]
+    .data            inited   0x2000'03b0      0x4  hand_recog.o [1]
+    .data            inited   0x2000'03b4      0x8  hand_recog.o [1]
+    .data            inited   0x2000'03bc     0x30  hand_recog.o [1]
+    .data            inited   0x2000'03ec      0x4  hand_recog.o [1]
+    .data            inited   0x2000'03f0      0x4  hand_recog.o [1]
+    .data            inited   0x2000'03f4     0x30  hand_recog.o [1]
+    .data            inited   0x2000'0424      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0428      0xc  hand_recog.o [1]
+    .data            inited   0x2000'0434      0x4  hand_recog.o [1]
+    .data            inited   0x2000'0438      0xc  hand_recog.o [1]
+    .data            inited   0x2000'0444     0x18  hand_recog.o [1]
+    .data            inited   0x2000'045c     0x90  hand_recog.o [1]
+    .data            inited   0x2000'04ec     0x80  hand_recog.o [1]
+    .data            inited   0x2000'056c     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0588     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'05a4     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'05c0     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'05dc     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'05f8     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0614     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0630     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'064c     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0668     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0684     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'06a0     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'06bc     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'06d8     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'06f4     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0710     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'072c     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0748     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0764     0x58  hand_recog.o [1]
+    .data            inited   0x2000'07bc     0x18  hand_recog.o [1]
+    .data            inited   0x2000'07d4     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'07f0     0x18  hand_recog.o [1]
+    .data            inited   0x2000'0808     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0824     0x18  hand_recog.o [1]
+    .data            inited   0x2000'083c     0x1c  hand_recog.o [1]
+    .data            inited   0x2000'0858     0x58  hand_recog.o [1]
+    .data            inited   0x2000'08b0      0xc  stm32l4xx_hal.o [1]
+    .data            inited   0x2000'08bc      0x4  system_stm32l4xx.o [1]
+                            - 0x2000'08c0    0x8c0
+
+"P2-P3", part 2 of 3:                      0x119bc
+  .bss               zero     0x2000'08c0  0x11200  app_x-cube-ai.o [1]
+  .bss               zero     0x2001'1ac0    0x60c  main.o [1]
+  .bss               zero     0x2001'20cc     0xa4  main.o [1]
+  .bss               zero     0x2001'2170     0x68  main.o [1]
+  .bss               zero     0x2001'21d8     0x18  hand_recog.o [1]
+  .bss               zero     0x2001'21f0     0x18  hand_recog.o [1]
+  .bss               zero     0x2001'2208     0x10  hand_recog.o [1]
+  .bss               zero     0x2001'2218     0x10  hand_recog.o [1]
+  .bss               zero     0x2001'2228     0x10  hand_recog.o [1]
+  .bss               zero     0x2001'2238     0x10  hand_recog.o [1]
+  .bss               zero     0x2001'2248      0x8  hand_recog.o [1]
+  .bss               zero     0x2001'2250      0x8  hand_recog.o [1]
+  .bss               zero     0x2001'2258      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'225c      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'2260      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'2264      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'2268      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'226c      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'2270      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'2274      0x4  hand_recog.o [1]
+  .bss               zero     0x2001'2278      0x4  hand_recog.o [1]
+                            - 0x2001'227c  0x119bc
+
+"P2-P3", part 3 of 3:                        0x800
+  CSTACK                      0x2001'2280    0x800  <Block>
+    CSTACK           uninit   0x2001'2280    0x800  <Block tail>
+                            - 0x2001'2a80    0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x80a'cc3e   0x80f'ffff  0x5'33c2
+  0x2001'227c  0x2001'227f       0x4
+  0x2001'2a80  0x2001'7fff    0x5580
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x119bc:
+          0x2000'08c0  0x119bc
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x302 (34% of destination):
+           0x80a'c93c    0x302
+    1 destination range, total size 0x8c0:
+          0x2000'0000    0x8c0
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                         ro code  ro data  rw data
+    ------                         -------  -------  -------
+command line/config:
+    --------------------------------------------------------
+    Total:
+
+D:\微處理機系統實驗\Final project 3\Final project 3\EWARM\Final project 3\Obj: [1]
+    app_x-cube-ai.o                    164       65   70 196
+    hand_recog.o                       284      803    2 336
+    hand_recog_data.o                    8  688 744
+    main.o                           1 192      204    1 816
+    startup_stm32l476xx.o              724
+    stm32l4xx_hal.o                    126        4       12
+    stm32l4xx_hal_cortex.o             172
+    stm32l4xx_hal_crc.o                124
+    stm32l4xx_hal_crc_ex.o              76
+    stm32l4xx_hal_gpio.o               508
+    stm32l4xx_hal_msp.o                312
+    stm32l4xx_hal_pwr_ex.o             136
+    stm32l4xx_hal_rcc.o              1 780
+    stm32l4xx_hal_rcc_ex.o           1 336
+    stm32l4xx_hal_uart.o             1 210
+    stm32l4xx_it.o                      20
+    system_stm32l4xx.o                  92       58        4
+    --------------------------------------------------------
+    Total:                           8 264  689 878   74 364
+
+NetworkRuntime500_CM4_IAR.a: [2]
+    ai_datatypes_format.o              314
+    ai_platform_interface.o          1 516
+    core_common.o                       36
+    layers.o                            84
+    layers_conv2d_generic_float.o    4 268
+    layers_nl_generic_float.o        1 028
+    layers_pool_generic_float.o        880
+    --------------------------------------------------------
+    Total:                           8 126
+
+dl7M_tlf.a: [3]
+    exit.o                               4
+    low_level_init.o                     4
+    --------------------------------------------------------
+    Total:                               8
+
+m7M_tls.a: [4]
+    expf.o                              90
+    fpinit_M.o                          34
+    xexpf.o                            222       68
+    --------------------------------------------------------
+    Total:                             346       68
+
+rt7M_tl.a: [5]
+    ABImemclr4.o                         6
+    ABImemcpy.o                        166
+    ABImemset48.o                       50
+    I64DivMod_small.o                  262
+    I64DivZer.o                          2
+    cexit.o                             10
+    cmain.o                             30
+    cstartup_M.o                        12
+    data_init.o                         40
+    lz77_init_single.o                 122
+    memcmp.o                           104
+    strcmp.o                            18
+    zero_init3.o                        58
+    --------------------------------------------------------
+    Total:                             880
+
+shb_l.a: [6]
+    exit.o                              20
+    --------------------------------------------------------
+    Total:                              20
+
+    Gaps                                22        2
+    Linker created                               32    2 048
+------------------------------------------------------------
+    Grand Total:                    17 666  689 980   76 412
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address     Size  Type      Object
+-----                       -------     ----  ----      ------
+.iar.init_table$$Base    0x80a'c750            --   Gb  - Linker created -
+.iar.init_table$$Limit   0x80a'c770            --   Gb  - Linker created -
+?main                    0x80a'c771           Code  Gb  cmain.o [5]
+AHBPrescTable            0x80a'c618     0x10  Data  Gb  system_stm32l4xx.o [1]
+APBPrescTable            0x80a'c7f8      0x8  Data  Gb  system_stm32l4xx.o [1]
+BusFault_Handler         0x80a'c7bf      0x2  Code  Gb  stm32l4xx_it.o [1]
+CSTACK$$Base            0x2001'2280            --   Gb  - Linker created -
+CSTACK$$Limit           0x2001'2a80            --   Gb  - Linker created -
+DebugMon_Handler         0x80a'c7c5      0x2  Code  Gb  stm32l4xx_it.o [1]
+HAL_CRCEx_Polynomial_Set
+                         0x80a'bc05     0x4c  Code  Gb  stm32l4xx_hal_crc_ex.o [1]
+HAL_CRC_Init             0x80a'ba65     0x76  Code  Gb  stm32l4xx_hal_crc.o [1]
+HAL_CRC_MspInit          0x80a'b095     0x22  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_GPIO_Init            0x80a'b2b1    0x1cc  Code  Gb  stm32l4xx_hal_gpio.o [1]
+HAL_GetTick              0x80a'9d89      0xc  Code  Wk  stm32l4xx_hal.o [1]
+HAL_IncTick              0x80a'c7cd     0x10  Code  Wk  stm32l4xx_hal.o [1]
+HAL_Init                 0x80a'ba45     0x1e  Code  Gb  stm32l4xx_hal.o [1]
+HAL_InitTick             0x80a'9d45     0x44  Code  Wk  stm32l4xx_hal.o [1]
+HAL_MspInit              0x80a'b069     0x2c  Code  Gb  stm32l4xx_hal_msp.o [1]
+HAL_NVIC_SetPriority     0x80a'9e51     0x3a  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_NVIC_SetPriorityGrouping
+                         0x80a'9e37     0x1a  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_PWREx_ControlVoltageScaling
+                         0x80a'9da1     0x5e  Code  Gb  stm32l4xx_hal_pwr_ex.o [1]
+HAL_PWREx_GetVoltageRange
+                         0x80a'9d95      0xc  Code  Gb  stm32l4xx_hal_pwr_ex.o [1]
+HAL_RCCEx_PeriphCLKConfig
+                         0x80a'a675    0x324  Code  Gb  stm32l4xx_hal_rcc_ex.o [1]
+HAL_RCC_ClockConfig      0x80a'9ac1    0x100  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK1Freq     0x80a'9c67     0x10  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetPCLK2Freq     0x80a'9c77      0xe  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                         0x80a'9bd5     0x92  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_RCC_OscConfig        0x80a'9651    0x44c  Code  Gb  stm32l4xx_hal_rcc.o [1]
+HAL_SYSTICK_Config       0x80a'9e8b     0x28  Code  Gb  stm32l4xx_hal_cortex.o [1]
+HAL_UART_Init            0x80a'abad     0x30  Code  Gb  stm32l4xx_hal_uart.o [1]
+HAL_UART_MspInit         0x80a'b0b7     0xa8  Code  Gb  stm32l4xx_hal_msp.o [1]
+HardFault_Handler        0x80a'c7bb      0x2  Code  Gb  stm32l4xx_it.o [1]
+MSIRangeTable            0x80a'c6d4     0x30  Data  Gb  system_stm32l4xx.o [1]
+MX_X_CUBE_AI_Init        0x80a'ba33      0x4  Code  Gb  app_x-cube-ai.o [1]
+MX_X_CUBE_AI_Init::activations
+                        0x2000'08c0  0x11200  Data  Lc  app_x-cube-ai.o [1]
+MemManage_Handler        0x80a'c7bd      0x2  Code  Gb  stm32l4xx_it.o [1]
+NMI_Handler              0x80a'c7b9      0x2  Code  Gb  stm32l4xx_it.o [1]
+PendSV_Handler           0x80a'c7c7      0x2  Code  Gb  stm32l4xx_it.o [1]
+RCCEx_PLLSAI1_Config     0x80a'a9b3     0xc8  Code  Lc  stm32l4xx_hal_rcc_ex.o [1]
+RCCEx_PLLSAI2_Config     0x80a'aa81     0xac  Code  Lc  stm32l4xx_hal_rcc_ex.o [1]
+RCC_SetFlashLatencyFromMSIRange
+                         0x80a'9c8f     0x74  Code  Lc  stm32l4xx_hal_rcc.o [1]
+Region$$Table$$Base      0x80a'c750            --   Gb  - Linker created -
+Region$$Table$$Limit     0x80a'c770            --   Gb  - Linker created -
+RunInference             0x80a'b739     0x44  Code  Gb  main.o [1]
+SVC_Handler              0x80a'c7c3      0x2  Code  Gb  stm32l4xx_it.o [1]
+SysTick_Handler          0x80a'c7c9      0x4  Code  Gb  stm32l4xx_it.o [1]
+SystemClock_Config       0x80a'b865     0x86  Code  Gb  main.o [1]
+SystemCoreClock         0x2000'08bc      0x4  Data  Gb  system_stm32l4xx.o [1]
+SystemInit               0x80a'c5cd     0x3c  Code  Gb  system_stm32l4xx.o [1]
+UART3_Transmit           0x80a'b4e5     0x32  Code  Gb  main.o [1]
+UART5_IRQHandler         0x80a'b77d     0x68  Code  Gb  main.o [1]
+UART5_Init               0x80a'b5b9     0x9a  Code  Gb  main.o [1]
+UART_AdvFeatureConfig    0x80a'aee1     0xc6  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_CheckIdleState      0x80a'afa7     0x5a  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_SetConfig           0x80a'ac2d    0x276  Code  Gb  stm32l4xx_hal_uart.o [1]
+UART_WaitOnFlagUntilTimeout
+                         0x80a'b001     0x5a  Code  Gb  stm32l4xx_hal_uart.o [1]
+USART3_IRQHandler        0x80a'b653     0x7a  Code  Gb  main.o [1]
+USART3_Init              0x80a'b517     0xa2  Code  Gb  main.o [1]
+UsageFault_Handler       0x80a'c7c1      0x2  Code  Gb  stm32l4xx_it.o [1]
+__NVIC_SetPriority       0x80a'9e1d     0x1a  Code  Lc  stm32l4xx_hal_cortex.o [1]
+__aeabi_ldiv0            0x80a'b4ad           Code  Gb  I64DivZer.o [5]
+__aeabi_memclr4          0x80a'b2a9           Code  Gb  ABImemclr4.o [5]
+__aeabi_memcpy           0x80a'a52d           Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy4          0x80a'a54d           Code  Gb  ABImemcpy.o [5]
+__aeabi_memcpy8          0x80a'a54d           Code  Gb  ABImemcpy.o [5]
+__cmain                  0x80a'c771           Code  Gb  cmain.o [5]
+__exit                   0x80a'c7a5     0x14  Code  Gb  exit.o [6]
+__iar_Memset4_word       0x80a'b4b1           Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word       0x80a'b4b1           Code  Gb  ABImemset48.o [5]
+__iar_data_init3         0x80a'c705     0x28  Code  Gb  data_init.o [5]
+__iar_exp32              0x80a'c055           Code  Gb  expf.o [4]
+__iar_expf_OutBnd        0x80a'c085           Code  Gb  expf.o [4]
+__iar_expf_cTab          0x80a'c628           Data  Gb  xexpf.o [4]
+__iar_init_vfp           0x80a'c72d           Code  Gb  fpinit_M.o [4]
+__iar_lz77_init_single3
+                         0x80a'95d7     0x7a  Code  Gb  lz77_init_single.o [5]
+__iar_program_start      0x80a'c7ed           Code  Gb  cstartup_M.o [5]
+__iar_small_uldivmod     0x80a'b1a1           Code  Gb  I64DivMod_small.o [5]
+__iar_xexp2f             0x80a'c0bd           Code  Gb  xexpf.o [4]
+__iar_xexpf              0x80a'c0b1           Code  Gb  xexpf.o [4]
+__iar_xsinhf             0x80a'c0c1           Code  Gb  xexpf.o [4]
+__iar_zero_init3         0x80a'a5d3     0x3a  Code  Gb  zero_init3.o [5]
+__low_level_init         0x80a'c78f      0x4  Code  Gb  low_level_init.o [3]
+__vector_table           0x800'0000           Data  Gb  startup_stm32l476xx.o [1]
+_call_main               0x80a'c77d           Code  Gb  cmain.o [5]
+_exit                    0x80a'c799           Code  Gb  cexit.o [5]
+_main                    0x80a'c78b           Code  Gb  cmain.o [5]
+_platform_network_sanity_check{5}::signatures
+                         0x80a'a4a0      0x4  Data  Lc  ai_platform_interface.o [2]
+_platform_network_state_setup
+                         0x80a'9ec9     0x3a  Code  Lc  ai_platform_interface.o [2]
+aiInit                   0x80a'b9a1     0x54  Code  Gb  app_x-cube-ai.o [1]
+aiRun                    0x80a'b9f5     0x3e  Code  Gb  app_x-cube-ai.o [1]
+ai_array_get_byte_size   0x80a'9581     0x56  Code  Gb  ai_datatypes_format.o [2]
+ai_array_to_buffer_fmt   0x80a'949d     0xac  Code  Gb  ai_datatypes_format.o [2]
+ai_check_custom_types    0x80a'a4d9     0x26  Code  Gb  layers.o [2]
+ai_check_custom_types::ref_signatures
+                         0x80a'a528      0x4  Data  Lc  layers.o [2]
+ai_conv2d_stripe_f32     0x80a'83f1    0x5aa  Code  Lc  layers_conv2d_generic_float.o [2]
+ai_dict4_dot_array_f32   0x80a'8afd    0x162  Code  Gb  layers_conv2d_generic_float.o [2]
+ai_dict8_dot_array_f32   0x80a'899d    0x15c  Code  Gb  layers_conv2d_generic_float.o [2]
+ai_dict_decompress_f32   0x80a'8c65     0xd4  Code  Gb  layers_conv2d_generic_float.o [2]
+ai_hand_recog_create     0x80a'bb75     0x14  Code  Gb  hand_recog.o [1]
+ai_hand_recog_data_weights_get
+                         0x80a'bae1      0x8  Code  Gb  hand_recog_data.o [1]
+ai_hand_recog_data_weights_get::s_hand_recog_weights
+                         0x800'0188  0xa8268  Data  Lc  hand_recog_data.o [1]
+ai_hand_recog_destroy    0x80a'bb89      0x4  Code  Gb  hand_recog.o [1]
+ai_hand_recog_get_error
+                         0x80a'bb71      0x4  Code  Gb  hand_recog.o [1]
+ai_hand_recog_init       0x80a'bb8d     0x54  Code  Gb  hand_recog.o [1]
+ai_hand_recog_run        0x80a'bc01      0x4  Code  Gb  hand_recog.o [1]
+ai_input                0x2000'0000     0x18  Data  Lc  app_x-cube-ai.o [1]
+ai_layers_forward_all    0x80a'a501     0x26  Code  Gb  layers.o [2]
+ai_output               0x2000'0018     0x18  Data  Lc  app_x-cube-ai.o [1]
+ai_platform_network_create
+                         0x80a'9f4f     0x8a  Code  Gb  ai_platform_interface.o [2]
+ai_platform_network_destroy
+                         0x80a'9fd9     0x46  Code  Gb  ai_platform_interface.o [2]
+ai_platform_network_get_error
+                         0x80a'9f03     0x4c  Code  Gb  ai_platform_interface.o [2]
+ai_platform_network_init
+                         0x80a'a01f     0xb8  Code  Gb  ai_platform_interface.o [2]
+ai_platform_network_process
+                         0x80a'a0d9    0x3a6  Code  Gb  ai_platform_interface.o [2]
+ai_shape_get_size        0x80a'bc51     0x52  Code  Lc  layers_nl_generic_float.o [2]
+ascii_buffer            0x2001'1ac0      0x4  Data  Gb  main.o [1]
+ascii_count             0x2001'20c4      0x4  Data  Gb  main.o [1]
+cmd                     0x2001'2170     0x64  Data  Gb  main.o [1]
+conv2d_92_bias          0x2000'0630     0x1c  Data  Lc  hand_recog.o [1]
+conv2d_92_bias_array    0x2000'054c     0x10  Data  Lc  hand_recog.o [1]
+conv2d_92_chain          0x80a'c66c      0x8  Data  Lc  hand_recog.o [1]
+conv2d_92_layer         0x2000'0764     0x58  Data  Lc  hand_recog.o [1]
+conv2d_92_output        0x2000'0684     0x1c  Data  Lc  hand_recog.o [1]
+conv2d_92_output0       0x2000'06a0     0x1c  Data  Lc  hand_recog.o [1]
+conv2d_92_output_array  0x2000'047c     0x10  Data  Lc  hand_recog.o [1]
+conv2d_92_scratch0      0x2000'056c     0x1c  Data  Lc  hand_recog.o [1]
+conv2d_92_scratch0_array
+                        0x2000'045c     0x10  Data  Lc  hand_recog.o [1]
+conv2d_92_weights       0x2000'064c     0x1c  Data  Lc  hand_recog.o [1]
+conv2d_92_weights_array
+                        0x2000'055c     0x10  Data  Lc  hand_recog.o [1]
+core_get_error           0x80a'a4b9      0xa  Code  Gb  core_common.o [2]
+core_init                0x80a'a4b5      0x4  Code  Gb  core_common.o [2]
+core_set_error           0x80a'a4c3     0x16  Code  Gb  core_common.o [2]
+dense_44_bias           0x2000'05f8     0x1c  Data  Lc  hand_recog.o [1]
+dense_44_bias_array     0x2000'052c     0x10  Data  Lc  hand_recog.o [1]
+dense_44_chain           0x80a'c674      0x8  Data  Lc  hand_recog.o [1]
+dense_44_layer          0x2000'07bc     0x18  Data  Lc  hand_recog.o [1]
+dense_44_nl_chain        0x80a'c67c      0x8  Data  Lc  hand_recog.o [1]
+dense_44_nl_layer       0x2000'07d4     0x1c  Data  Lc  hand_recog.o [1]
+dense_44_nl_output      0x2000'06d8     0x1c  Data  Lc  hand_recog.o [1]
+dense_44_nl_output_array
+                        0x2000'049c     0x10  Data  Lc  hand_recog.o [1]
+dense_44_output         0x2000'06bc     0x1c  Data  Lc  hand_recog.o [1]
+dense_44_output_array   0x2000'048c     0x10  Data  Lc  hand_recog.o [1]
+dense_44_weights        0x2000'0614     0x1c  Data  Lc  hand_recog.o [1]
+dense_44_weights_array  0x2000'053c     0x10  Data  Lc  hand_recog.o [1]
+dense_45_bias           0x2000'05c0     0x1c  Data  Lc  hand_recog.o [1]
+dense_45_bias_array     0x2000'050c     0x10  Data  Lc  hand_recog.o [1]
+dense_45_chain           0x80a'c684      0x8  Data  Lc  hand_recog.o [1]
+dense_45_layer          0x2000'07f0     0x18  Data  Lc  hand_recog.o [1]
+dense_45_nl_chain        0x80a'c68c      0x8  Data  Lc  hand_recog.o [1]
+dense_45_nl_layer       0x2000'0808     0x1c  Data  Lc  hand_recog.o [1]
+dense_45_nl_output      0x2000'0710     0x1c  Data  Lc  hand_recog.o [1]
+dense_45_nl_output_array
+                        0x2000'04bc     0x10  Data  Lc  hand_recog.o [1]
+dense_45_output         0x2000'06f4     0x1c  Data  Lc  hand_recog.o [1]
+dense_45_output_array   0x2000'04ac     0x10  Data  Lc  hand_recog.o [1]
+dense_45_weights        0x2000'05dc     0x1c  Data  Lc  hand_recog.o [1]
+dense_45_weights_array  0x2000'051c     0x10  Data  Lc  hand_recog.o [1]
+dense_46_bias           0x2000'0588     0x1c  Data  Lc  hand_recog.o [1]
+dense_46_bias_array     0x2000'04ec     0x10  Data  Lc  hand_recog.o [1]
+dense_46_chain           0x80a'c694      0x8  Data  Lc  hand_recog.o [1]
+dense_46_layer          0x2000'0824     0x18  Data  Lc  hand_recog.o [1]
+dense_46_nl_chain        0x80a'c69c      0x8  Data  Lc  hand_recog.o [1]
+dense_46_nl_layer       0x2000'083c     0x1c  Data  Lc  hand_recog.o [1]
+dense_46_nl_output      0x2000'0748     0x1c  Data  Lc  hand_recog.o [1]
+dense_46_nl_output_array
+                        0x2000'04dc     0x10  Data  Lc  hand_recog.o [1]
+dense_46_output         0x2000'072c     0x1c  Data  Lc  hand_recog.o [1]
+dense_46_output_array   0x2000'04cc     0x10  Data  Lc  hand_recog.o [1]
+dense_46_weights        0x2000'05a4     0x1c  Data  Lc  hand_recog.o [1]
+dense_46_weights_array  0x2000'04fc     0x10  Data  Lc  hand_recog.o [1]
+exit                     0x80a'c793      0x4  Code  Gb  exit.o [3]
+expf                     0x80a'c055           Code  Gb  expf.o [4]
+forward_conv2d_nl_pool   0x80a'8d39    0x4b6  Code  Gb  layers_conv2d_generic_float.o [2]
+forward_dense            0x80a'91f1    0x2a2  Code  Gb  layers_conv2d_generic_float.o [2]
+forward_relu             0x80a'bf4d     0xb0  Code  Gb  layers_nl_generic_float.o [2]
+forward_sm               0x80a'c001     0x54  Code  Gb  layers_nl_generic_float.o [2]
+func_dummy               0x80a'899b      0x2  Code  Lc  layers_conv2d_generic_float.o [2]
+g_hand_recog            0x2000'0858     0x58  Data  Lc  hand_recog.o [1]
+hand_recog              0x2000'0030      0x4  Data  Lc  app_x-cube-ai.o [1]
+hand_recog_configure_weights
+                         0x80a'bae9     0x88  Code  Lc  hand_recog.o [1]
+hcrc                    0x2001'20cc     0x24  Data  Gb  main.o [1]
+huart5                  0x2001'20f0     0x80  Data  Gb  main.o [1]
+input                   0x2001'1ac4    0x600  Data  Gb  main.o [1]
+input_0_output          0x2000'0668     0x1c  Data  Lc  hand_recog.o [1]
+input_0_output_array    0x2000'046c     0x10  Data  Lc  hand_recog.o [1]
+len                     0x2001'21d4      0x4  Data  Gb  main.o [1]
+main                     0x80a'b7e5     0x80  Code  Gb  main.o [1]
+memcmp                   0x80a'a60d           Code  Gb  memcmp.o [5]
+nl_func_relu_array_f32   0x80a'bca5     0x34  Code  Gb  layers_nl_generic_float.o [2]
+nl_func_relu_generic_array_f32
+                         0x80a'be5d     0xb6  Code  Gb  layers_nl_generic_float.o [2]
+nl_func_relu_thresholded_array_f32
+                         0x80a'bf15     0x38  Code  Gb  layers_nl_generic_float.o [2]
+nl_func_sm_array_f32     0x80a'bdfd     0x5a  Code  Gb  layers_nl_generic_float.o [2]
+nl_func_sm_channel_f32   0x80a'bcd9    0x124  Code  Gb  layers_nl_generic_float.o [2]
+pool_func_mp_array_f32   0x80a'c191    0x36a  Code  Gb  layers_pool_generic_float.o [2]
+read                    0x2001'20c8      0x4  Data  Gb  main.o [1]
+show                     0x80a'b6d5     0x64  Code  Gb  main.o [1]
+strcmp                   0x80a'b98d           Code  Gb  strcmp.o [5]
+uwTick                  0x2000'08b0      0x4  Data  Gb  stm32l4xx_hal.o [1]
+uwTickFreq              0x2000'08b8      0x4  Data  Gb  stm32l4xx_hal.o [1]
+uwTickPrio              0x2000'08b4      0x4  Data  Gb  stm32l4xx_hal.o [1]
+
+
+[1] = D:\微處理機系統實驗\Final project 3\Final project 3\EWARM\Final project 3\Obj
+[2] = NetworkRuntime500_CM4_IAR.a
+[3] = dl7M_tlf.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+   17 666 bytes of readonly  code memory
+  689 980 bytes of readonly  data memory
+   76 412 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

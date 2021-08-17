@@ -1,0 +1,39 @@
+    .syntax unified
+    .cpu cortex-m4
+    .thumb
+	.text
+    	.equ DIGIT_0, 0x01
+    	.equ DECODE_MODE, 0x09
+    	.equ DISPLAY_TEST, 0x0F
+    	.equ SCAN_LIMIT, 0x0B
+    	.equ INTENSITY, 0x0A
+    	.equ SHUTDOWN, 0x0C
+
+	max7219_init:
+		// Din is connneted to D13 (PA7)
+		// operate pa7 to set Din
+		//TODO: Initialize max7219 registers
+		push {r0, r1, r2, lr}
+		// In DECODE_MODE: 依照表格把D0~D3的值解碼成7-seg LED
+		// Not: 將D0~D7直接顯示在7-seg LED上
+		ldr r0, =DECODE_MODE //set how many digits are decoded
+		ldr r1, =0x00 //no decode for all digit0~digit7
+		BL MAX7219Send
+		ldr r0, =DISPLAY_TEST // Test the leds are fine
+		ldr r1, =0x0
+		//0:normal operation
+		//1:test
+		BL MAX7219Send
+		ldr r0, =SCAN_LIMIT //set how many digits are displayed
+		ldr r1, =0x00 //0x00~0x07: display only digit0 => display digit0~digit7
+		BL MAX7219Send
+		ldr r0, =INTENSITY //brightness (0~F)
+		ldr r1, =0xA
+		BL MAX7219Send
+		ldr r0, =SHUTDOWN
+		ldr r1, =0x1
+		//0:shutdown
+		//1:operation
+		BL MAX7219Send
+		pop {r0, r1, r2, lr}
+		BX LR

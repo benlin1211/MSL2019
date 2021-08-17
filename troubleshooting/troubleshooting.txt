@@ -1,0 +1,46 @@
+
+https://www.kaggle.com/gti-upm/leapgestrecog
+https://colab.research.google.com/github/filipefborba/HandRecognition/blob/master/project3/project3.ipynb
+
+沒有.o檔：改用cubeai5.0.0
+
+沒有si.platform:忘記analyze
+
+通解:刪掉全部，重新generate
+
+注意板子的rate是9600，usart才是115200
+
+vaildate on target failed:
+
+[AI:network] error flashing filmware:model太大 (rom)
+ram 128KB, rom(flash) 1MB
+
+壓縮差別在rom
+
+heap size: Adding extra erase range
+
+ai_network_create()
+ai_network_init()
+ai_network_run()
+
+network_data.c: 放網路權重的樣子
+
+Compress
+The code generator tries to compress the weight/bias parameters 
+of the dense/fully-connected layers. Algorithm is based on a k-means clustering approach 
+to create a dictionnary with the centroids.
+
+generate code successfully but SW4STM32 has a problem:
+刪掉舊的檔案
+
+
+ide EWARM V8 not found
+
+Convert float to 4 Bytes and then back again: 直接cast
+https://os.mbed.com/forum/helloworld/topic/2053/?page=1#comment-54720
+
+
+OV7670 avrdude: ser_open(): can't open device "\\.\COM5": �H�����ݹO�ɡC
+移除藍芽com
+
+

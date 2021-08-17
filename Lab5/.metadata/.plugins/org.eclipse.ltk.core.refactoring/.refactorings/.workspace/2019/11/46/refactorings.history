@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Lab5-1/src/gpio_init.s&apos;" deleteContents="false" description="Delete resource &apos;Lab5-1/src/gpio_init.s&apos;" element1="/Lab5-1/src/gpio_init.s" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1573369199763"/>&#x0A;<refactoring comment="Delete resource &apos;Lab5-1/src/max7219_send.s&apos;" deleteContents="false" description="Delete resource &apos;Lab5-1/src/max7219_send.s&apos;" element1="/Lab5-1/src/max7219_send.s" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1573369204767"/>
+</session>

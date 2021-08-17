@@ -1,0 +1,15 @@
+    .syntax unified
+    .cpu cortex-m4
+    .thumb
+	.text
+		.global main
+		.global dalay
+
+	dalay:
+    	LDR   R3,=300
+		L1: LDR R4,	=200
+		L2: SUBS R4, #1
+		BNE   L2
+		SUBS  R3, #1
+		BNE   L1
+		BX    LR

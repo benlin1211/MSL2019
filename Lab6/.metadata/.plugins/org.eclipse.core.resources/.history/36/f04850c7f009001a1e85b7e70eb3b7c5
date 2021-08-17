@@ -1,0 +1,73 @@
+#include "stm32l476xx.h"
+#include "cmsis_gcc.h"
+#include "core_cm4.h"
+#include "core_cmFunc.h"
+#include "core_cmInstr.h"
+#include "core_cmSimd.h"
+#include "system_stm32l4xx.h"
+
+
+//0x7e, 0x30, 0x6d, 0x79, 0x33, 0x5b, 0x5f, 0x70, 0x7f, 0x7b
+//0,1,2,3,4,5,6,7,8,9
+
+#define SET_REG(REG,SELECT,VAL) {((REG)=((REG)&(~(SELECT)))|(VAL));};
+// You can use your way to store TIME_SEC. Maybe it is `int` or `float` or any you want
+#define TIME_SEC 12.70
+
+extern void GPIO_init();
+extern void max7219_init();
+extern void Display();
+
+void SystemClock_Config()
+{
+	RCC->CR |= RCC_CR_HSION;// turn on HSI16 oscillator
+	while((RCC->CR & RCC_CR_HSIRDY) == 0);//check HSI16 ready
+	SET_REG(RCC->CFGR, RCC_CFGR_HPRE, 0);//SYSCLK 16MHz
+	if((RCC->CR & RCC_CR_HSIRDY) == 0)
+		return;
+// Use HSI16 as system clock
+//APB1 prescaler not divide
+//APB2 prescaler not divide
+}
+
+void Timer_init( TIM_TypeDef *timer)
+
+{	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;
+	RCC->APB1ENR1 |= RCC_APB1ENR1_TIM5EN;//timer5 clock enable
+	timer->PSC = (uint32_t)(1600-1);//Prescalser
+	timer->ARR = (uint32_t)(10000-1);//Reload value
+	timer->EGR = TIM_EGR_UG;//Reinitialize the counter.
+}
+void Timer_start( TIM_TypeDef *timer){
+//TODO: start timer and show the time on the 7-SEG LED.
+	//start timer
+	timer->CR1 |= TIM_CR1_CEN;
+	int i;
+	for(i=1;i<=8;i++){
+		max7219_send(i,15); //ADDRESS , DATA
+	}
+}
+int main(){
+	GPIO_init();
+	max7219_init();
+	SystemClock_Config();
+	Timer_init(TIM5);
+	Timer_start(TIM5);
+
+	int timerValue;
+	while(1)
+	{
+		//TODO: Polling the timer count and do lab requirements
+		//ex: simulate a 50% duty cycle wave
+
+		timerValue = TIM5->CNT;
+		if (timerValue >= 9000)
+			GPIOA->BSRR = 0b100001;//on
+		else
+			GPIOA->BRR = 0b100001;//off
+
+		//if (timerValue < 2000){}
+
+	}
+}
+
